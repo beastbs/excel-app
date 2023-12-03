@@ -1,14 +1,8 @@
 # Folders
 /node_modules
 dist
-scss
-
-# eslint
-.eslintrc
-.eslintignore
 
 # Project
-babel.config.json
 requirements.txt
 
 # System
