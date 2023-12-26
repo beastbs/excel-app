@@ -6,10 +6,12 @@
 		"node": true
 	},
 	"rules":{
-		"no-unused-vars": "warn",
+		"no-unused-vars": "off",
 		"require-jsdoc": "off",
 		"arrow-parents": "off",
-		"comma-dangle": "off"
+		"comma-dangle": "off",
+		"operator-linebreak": ["error", "before"],
+		"max-len": ["warn", { "code": 120 }]
 	},
 	"extends": ["eslint:recommended", "google"]
 }
