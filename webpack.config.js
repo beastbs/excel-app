@@ -39,7 +39,8 @@ module.exports = {
     extensions: ['.js'],
     alias: {
       '@': pathResolve('src'),
-      '@core': pathResolve('src/core')
+      '@core': pathResolve('src/core'),
+      '@components': pathResolve('src/components')
     }
   },
   devtool: isDev ? 'source-map' : false,
