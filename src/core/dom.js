@@ -1,3 +1,5 @@
+// Позволит проще работать с DOM-деревом в будуйщем
+
 class Dom {
   constructor(selector) {
     // this.$$listeners = {};
@@ -16,8 +18,8 @@ class Dom {
     return this.$nativeElement.outerHTML.trim();
   }
 
-  log() {
-    console.log(this.$nativeElement);
+  log(data) {
+    console.log(!data ? this.$nativeElement : data);
   }
 
   clear() {
@@ -37,6 +39,7 @@ class Dom {
   }
 
   append(node) {
+    // Проверка для того - если node - будет нативная нода
     if (node instanceof Dom) {
       node = node.$nativeElement;
     }
@@ -50,7 +53,7 @@ class Dom {
     return this;
   }
 }
-
+// event.target - например
 export function $(selector) {
   return new Dom(selector);
 }

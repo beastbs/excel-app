@@ -5,6 +5,7 @@ import {Formula} from '@components/formula/Formula';
 import {Table} from '@components/table/Table';
 import './scss/index.scss';
 
+// Сам класс зависит от входных данных а не построен на них
 const excel = new Excel('#app', {
   components: [Header, Toolbar, Formula, Table],
 });
